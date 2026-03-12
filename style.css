@@ -90,6 +90,7 @@
     }
 
     .copy-btn {
+      width: 70px;
       background: none;
       border: none;
       padding: 6px 10px;
@@ -106,6 +107,10 @@
 
     .copied {
       color: var(--success);
+    }
+
+    button.copied {
+        font-weight: 600;
     }
 
     @media (max-width: 360px) {
@@ -167,18 +172,15 @@
         gap: 16px;
     }
 
-    button {
-        border: none;
-        font-family: "Google Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-
-        cursor: pointer;
+    .card-btn {
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
     }
 
-    button:hover{
+    .card-btn:hover{
         background-color: var(--text);
         color: var(--card)
     }
+
 

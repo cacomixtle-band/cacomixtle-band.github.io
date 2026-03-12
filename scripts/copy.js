@@ -19,7 +19,7 @@
           button.textContent = "Copiar";
           button.classList.remove("copied");
           valueElement.classList.remove("copied");
-        }, 600);
+        }, 1200);
       } catch (error) {
         console.error("Error al copiar al portapapeles", error);
       }
