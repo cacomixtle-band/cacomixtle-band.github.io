@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lacquer&display=swap');
+
+:root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --success: #16a34a;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Google Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    main {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    header p {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .card, .card-btn {
+      background-color: var(--card);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .field:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .value {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .copy-btn {
+      background: none;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      color: var(--accent);
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .copy-btn:hover {
+      background-color: #eff6ff;
+    }
+
+    .copied {
+      color: var(--success);
+    }
+
+    @media (max-width: 360px) {
+      .value {
+        font-size: 0.85rem;
+      }
+    }
+
+    .logo{
+        height: 100px;
+
+        background-image: url("./assets/logo_min_web_02.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .social-links{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .social-links img,
+    .mail-link img
+     {
+        width: 32px;
+        height: 32px;
+        display: block;
+
+        filter: invert(46%) sepia(7%) saturate(666%) hue-rotate(182deg) brightness(96%) contrast(97%);
+    }
+
+    .social-links img:hover{
+        filter: invert(14%) sepia(36%) saturate(519%) hue-rotate(175deg) brightness(91%) contrast(94%);
+    }
+
+    .content-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    a {
+        color: var(--text);
+        text-decoration: none;
+    }
+
+    .card-title {
+        font-weight: 600;
+    }
+
+    .sections-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    button {
+        border: none;
+        font-family: "Google Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: var(--text);
+        color: var(--card)
+    }
+
